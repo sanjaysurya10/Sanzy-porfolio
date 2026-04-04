@@ -1,5 +1,8 @@
 package in.bushansirgur.portfolio.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -17,6 +20,9 @@ import java.util.Map;
 
 @Controller
 public class HomeController {
+
+    private static final Logger log = LoggerFactory.getLogger(HomeController.class);
+    private static final ObjectMapper objectMapper = new ObjectMapper();
 
     @Value("${supabase.url}")
     private String supabaseUrl;
@@ -64,9 +70,8 @@ public class HomeController {
             headers.set("apikey", supabaseAnonKey);
             headers.set("Authorization", "Bearer " + supabaseAnonKey);
 
-            String body = String.format(
-                "{\"name\":\"%s\",\"email\":\"%s\",\"phone\":\"%s\",\"message\":\"%s\"}",
-                escape(name), escape(email), escape(phone), escape(message)
+            String body = objectMapper.writeValueAsString(
+                Map.of("name", name, "email", email, "phone", phone, "message", message)
             );
 
             HttpEntity<String> request = new HttpEntity<>(body, headers);
@@ -76,17 +81,12 @@ public class HomeController {
                 String.class
             );
 
-            System.out.println("Contact saved to Supabase: " + name + " <" + email + ">");
+            log.info("Contact saved to Supabase: {} <{}>", name, email);
             return ResponseEntity.ok(Map.of("status", "success"));
 
         } catch (Exception e) {
-            System.err.println("Supabase insert failed: " + e.getMessage());
+            log.error("Supabase insert failed: {}", e.getMessage());
             return ResponseEntity.internalServerError().body(Map.of("status", "error"));
         }
-    }
-
-    private String escape(String value) {
-        if (value == null) return "";
-        return value.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n").replace("\r", "");
     }
 }
