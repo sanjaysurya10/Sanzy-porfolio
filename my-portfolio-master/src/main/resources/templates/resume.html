@@ -1,188 +1,347 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
 </head>
-    <body>
-        <!-- Page Content-->
-        <div class="container px-5 my-5" th:fragment="resume">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Education Section-->
-                        <section>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Education</h2>
-                                <!-- Download resume button-->
-                                <a class="btn btn-primary px-4 py-3" href="/assets/Resume.pdf">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
-                            </div>
-                            <!-- Education Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2020 - 2024</div>
-                                                <div class="small fw-bolder">Anna University</div>
-                                                <div class="small text-muted">BE/Computer Science</div>
-                                                <div class="small text-muted">Chennai, IN</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Pursued my UnderGraduate degree in computer science and engineering , secured an overall CGPA of <strong>7.96</strong> and developed interest in the field of data analyst and web development.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Education Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">Schooling</div>
-                                                <div class="small fw-bolder">Velammal Vidyalaya</div>
-                                                <div class="small text-muted">Secondary and Higher Secondary</div>
-                                                <div class="small text-muted">Chennai, IN.</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <div>
-                                                Completed my schooling under the CBSE curriculum, securing an overall percentage of <strong>79%</strong> in Secondary (10th) and <strong>70%</strong> in Higher Secondary (12th).
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
 
-                        <!-- Experience Section-->
-                        <section>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                <!-- Download resume button-->
-                                <a class="btn btn-primary px-4 py-3" href="/assets/Certificate.pdf">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Certificate
-                                </a>
-                            </div>
-                            <!-- Experience Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">Intern</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Mindenious Company</div>
-                                                    <div class="small text-muted">Powered by <strong>WIPRO</strong></div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Data Science</div>
-                                                    <div class="small text-muted">Bangalore, IN</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>During my internship, I worked on real-world data analytics and machine learning tasks. I was involved in collecting, cleaning, and preprocessing large datasets, building predictive models, and visualizing insights to support business decisions. I gained hands-on experience with tools such as Python (Pandas, NumPy), SQL, and data visualization libraries like Matplotlib and Seaborn. This internship strengthened my practical understanding of data science workflows and model deployment.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Experience Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">Intern</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Sutherland Global pvt</div>
-                                                    <div class="small text-muted">Data handling and customer support</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted"><strong>Associate Employee</strong></div>
-                                                    <div class="small text-muted">Chennai, IN</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Initially trained as a Support Associate, where I handled customer data, maintaining accurate records, updating logs, and generating basic reports for internal analysis. Later, transitioned into process training, where I learned about workflow optimization, quality assurance, and internal communication protocols. This experience enhanced my professional communication skills, data validation, and understanding of enterprise-level service delivery.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Divider-->
-                        <div class="pb-5"></div>
-                        <!-- Skills Section-->
-                        <section>
-                            <!-- Skillset Card-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <!-- Tools list-->
-                                    <div class="mb-5">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Tools</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Spring-Boot</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Bootstrap</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">IntelliJ IDEA</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">My SQL</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Visual studio code</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Postman</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">ReactJS</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JWT</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Git</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">NumPy</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Figma</div></div>
-                                        </div>
-                                    </div>
-                                    <!-- Languages list-->
-                                    <div class="mb-5">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML/CSS</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Java</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SQL</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JSON</div></div>
-                                        </div>
-                                    </div>
-                                    <!--professional skills -->
-                                    <div class="mb-5">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional skills</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data Analytics</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data Science</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Spring Security</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Database Management</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">API integration</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+<body>
+    <!-- Page Content-->
+    <div class="container px-5 my-5" th:fragment="resume">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                <!-- Education Section-->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h2 class="text-primary fw-bolder mb-0" style="color:#64c8ff!important">Education</h2>
+                        <!-- Download resume button-->
+                        <a class="btn btn-primary px-4 py-3" href="/assets/Sanjay_JPMorgan_AIML_Resume_compressed.pdf"
+                            download>
+                            <div class="d-inline-block bi bi-download me-2"></div>
+                            Download Resume
+                        </a>
                     </div>
-                </div>
+                    <!-- Education Card 1 - MSc-->
+                    <div class="card glass-card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                    <div class="glass-label p-4">
+                                        <div class="text-primary fw-bolder mb-2">2025 – 2026</div>
+                                        <div class="small fw-bolder">Maynooth University</div>
+                                        <div class="small text-muted">MSc Data Science &amp; Analytics</div>
+                                        <div class="small text-muted">Dublin, Ireland</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div>Pursuing my postgraduate degree in Data Science and Analytics at Maynooth
+                                        University. Modules include Statistical Machine Learning, Spatial Data
+                                        Analytics, AI Applications, and Data Visualisation. Dissertation on
+                                        Speech-to-Text Deep Learning supervised by Dr. Cong Wang.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education Card 2 - BE-->
+                    <div class="card glass-card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                    <div class="glass-label p-4">
+                                        <div class="text-primary fw-bolder mb-2">2020 – 2024</div>
+                                        <div class="small fw-bolder">Anna University</div>
+                                        <div class="small text-muted">BE/Computer Science</div>
+                                        <div class="small text-muted">Chennai, IN</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div>Pursued my UnderGraduate degree in computer science and engineering, secured an
+                                        overall CGPA of <strong>7.96</strong> and developed interest in the field of
+                                        data analytics and web development.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education Card 3 - Schooling-->
+                    <div class="card glass-card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                    <div class="glass-label p-4">
+                                        <div class="text-primary fw-bolder mb-2">Schooling</div>
+                                        <div class="small fw-bolder">Velammal Vidyalaya</div>
+                                        <div class="small text-muted">Secondary and Higher Secondary</div>
+                                        <div class="small text-muted">Chennai, IN.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div>
+                                        Completed my schooling under the CBSE curriculum, securing an overall percentage
+                                        of <strong>79%</strong> in Secondary (10th) and <strong>70%</strong> in Higher
+                                        Secondary (12th).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Section-->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h2 class="text-primary fw-bolder mb-0" style="color:#64c8ff!important">Experience</h2>
+                        <!-- Certificate button-->
+                        <a class="btn btn-primary px-4 py-3" href="/assets/Certificate.pdf">
+                            <div class="d-inline-block bi bi-download me-2"></div>
+                            Certificate
+                        </a>
+                    </div>
+                    <!-- Experience Card 1-->
+                    <div class="card glass-card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                    <div class="glass-label p-4">
+                                        <div class="text-secondary fw-bolder mb-2">Data Science Intern</div>
+                                        <div class="mb-2">
+                                            <div class="small fw-bolder">Mindenious</div>
+                                            <div class="small text-muted">Powered by <strong>WIPRO</strong></div>
+                                        </div>
+                                        <div class="fst-italic">
+                                            <div class="small text-muted">Jul – Aug 2025</div>
+                                            <div class="small text-muted">Bengaluru, IN</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div>Developed and evaluated ML models for predictive analytics on 10,000+ record
+                                        datasets using Python (Pandas, NumPy, Scikit-learn), improving model performance
+                                        by 20% through iterative feature engineering and hyperparameter tuning. Built
+                                        reusable Python scripts for data processing and experimentation workflows.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Card 2-->
+                    <div class="card glass-card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                    <div class="glass-label p-4">
+                                        <div class="text-secondary fw-bolder mb-2">Associate Process Intern</div>
+                                        <div class="mb-2">
+                                            <div class="small fw-bolder">Sutherland Global Services</div>
+                                            <div class="small text-muted">Data handling &amp; customer support</div>
+                                        </div>
+                                        <div class="fst-italic">
+                                            <div class="small text-muted">Aug – Oct 2024</div>
+                                            <div class="small text-muted">Chennai, IN</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div>Analysed client interaction data to identify workflow inefficiencies,
+                                        contributing to a 25% reduction in response times while maintaining SLA
+                                        compliance. Enhanced analytical thinking in high-volume production environments.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Divider-->
+                <div class="pb-5"></div>
+                <!-- Skills Section-->
+                <section>
+                    <!-- Skillset Card-->
+                    <div class="card glass-card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <!-- Tools list-->
+                            <div class="mb-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div
+                                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="bi bi-tools"></i>
+                                    </div>
+                                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Tools</span></h3>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">
+                                            Spring-Boot</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Bootstrap
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">IntelliJ
+                                            IDEA</div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">MySQL /
+                                            PostgreSQL</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">VS Code
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Postman
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Jupyter
+                                            Notebook</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Git /
+                                            GitHub</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Docker
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Anaconda
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Figma
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Languages list-->
+                            <div class="mb-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div
+                                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="bi bi-code-slash"></i>
+                                    </div>
+                                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span>
+                                    </h3>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Python
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Java
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">SQL / R
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">HTML/CSS
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">
+                                            JavaScript</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">JSON
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- AI / ML skills -->
+                            <div class="mb-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div
+                                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="bi bi-cpu"></i>
+                                    </div>
+                                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">AI / ML</span></h3>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">
+                                            Scikit-learn</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Pandas /
+                                            NumPy</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">LLM APIs
+                                            (Claude/OpenAI)</div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Prompt
+                                            Engineering</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">NLP / RAG
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Feature
+                                            Engineering</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--professional skills -->
+                            <div class="mb-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div
+                                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="bi bi-briefcase"></i>
+                                    </div>
+                                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional
+                                            Skills</span></h3>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Data
+                                            Analytics</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">ML
+                                            Pipelines</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Web
+                                            Development</div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">REST API
+                                            Design</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Database
+                                            Management</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center glass-label rounded-4 p-3 h-100">Agile /
+                                            Scrum</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-    </body>
+        </div>
+    </div>
+</body>
+
 </html>

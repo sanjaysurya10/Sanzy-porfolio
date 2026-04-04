@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // ----------- Video Background: fade in when ready -----------
+    const video = document.getElementById("bgg-video");
+    if (video) {
+        const markLoaded = () => video.classList.add("loaded");
+        if (video.readyState >= 3) {
+            markLoaded();
+        } else {
+            video.addEventListener("canplay", markLoaded, { once: true });
+        }
+        video.load();
+    }
+
     // ----------- About Section Pull-Up Animation -----------
     const aboutSection = document.querySelector("#about-section");
 
