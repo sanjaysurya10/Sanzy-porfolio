@@ -262,20 +262,24 @@ export default function ProjectsPage(): JSX.Element {
                 <div className="card-meta">
                   <div className="card-tag">Full Stack &middot; Booking</div>
                   <div className="card-title">Sport Mate</div>
+                  <div className="card-tagline">Venue Booking Platform</div>
                   <div className="tech-stack">
-                  <span className="tech-badge">Next.js 14</span>
-                  <span className="tech-badge">TypeScript</span>
-                  <span className="tech-badge">Node.js</span>
-                  <span className="tech-badge">MongoDB</span>
-                  <span className="tech-badge">Docker</span>
+                    <span className="tech-badge">Next.js 14</span>
+                    <span className="tech-badge">TypeScript</span>
+                    <span className="tech-badge">Node.js</span>
+                    <span className="tech-badge">Express</span>
+                    <span className="tech-badge">MongoDB</span>
+                    <span className="tech-badge">Docker</span>
+                    <span className="tech-badge">GitLab CI/CD</span>
                   </div>
                 </div>
                 <div className="flip-hint">&#8635; hover to flip</div>
               </div>
               <div className="flip-back">
                 <div className="card-title">Sport Mate</div>
-                <div className="card-desc">A full-stack sports venue booking platform with a 3-role system (Player, Owner, Admin). Features JWT auth, real-time slot conflict prevention, email notifications, weather API per venue, and an admin dashboard.</div>
+                <div className="card-desc">A full-stack sports venue booking platform built for Maynooth University, featuring a 3-role system (Player, Owner, Admin). Includes JWT authentication, real-time slot conflict prevention, email notifications via Nodemailer, weather API per venue, and a full admin dashboard for managing users, bookings and reports. Containerised with Docker and deployed via Maynooth University GitLab CI/CD pipeline.</div>
                 <div className="back-links">
+                  <a href="http://sanjaysurya10-sport-mate.msc.cs.nuim.ie" target="_blank" rel="noopener" className="btn-demo">&#9654; Live — Maynooth</a>
                   <a href="https://github.com/sanjaysurya10/Sport-Mate" target="_blank" rel="noopener" className="btn-git">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
                       <path
@@ -373,6 +377,52 @@ export default function ProjectsPage(): JSX.Element {
             </div>
           </div>
 
+
+          {/* CARD: SPEECH TO TEXT */}
+          <div className="flip-wrapper card-green">
+            <div className="flip-inner">
+              <div className="flip-front">
+                <div className="card-icon">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="14" y="4" width="8" height="15" rx="4" fill="rgba(57,255,133,0.15)" stroke="#39ff85" strokeWidth="1.2" />
+                    <path d="M10 16c0 4.418 3.582 8 8 8s8-3.582 8-8" stroke="#39ff85" strokeWidth="1.3" strokeLinecap="round" />
+                    <line x1="18" y1="24" x2="18" y2="28" stroke="#39ff85" strokeWidth="1.3" strokeLinecap="round" />
+                    <rect x="9" y="30" width="18" height="2" rx="1" fill="rgba(57,255,133,0.5)" />
+                    <rect className="wave-bar-1" x="3" y="13" width="2.5" height="4" rx="1.2" fill="#39ff85" opacity=".7" transformOrigin="4.25 15" />
+                    <rect className="wave-bar-2" x="6.5" y="11" width="2.5" height="8" rx="1.2" fill="#39ff85" opacity=".8" transformOrigin="7.75 15" />
+                    <rect className="wave-bar-3" x="27" y="11" width="2.5" height="8" rx="1.2" fill="#39ff85" opacity=".8" transformOrigin="28.25 15" />
+                    <rect className="wave-bar-4" x="30.5" y="13" width="2.5" height="4" rx="1.2" fill="#39ff85" opacity=".7" transformOrigin="31.75 15" />
+                  </svg>
+                  <span className="pulse-dot"></span>
+                </div>
+                <div className="card-meta">
+                  <div className="card-tag">AI &middot; Speech</div>
+                  <div className="card-title">Speech to Text</div>
+                  <div className="card-tagline">AI Voice Transcription</div>
+                  <div className="tech-stack">
+                    <span className="tech-badge">Python</span>
+                    <span className="tech-badge">Whisper</span>
+                    <span className="tech-badge">NLP</span>
+                    <span className="tech-badge">Audio Processing</span>
+                  </div>
+                </div>
+                <div className="flip-hint">&#8635; hover to flip</div>
+              </div>
+              <div className="flip-back">
+                <div className="card-title">Speech to Text</div>
+                <div className="card-desc">A voice transcription application powered by OpenAI&apos;s Whisper model. Converts spoken audio to accurate text in real time, with support for multiple languages and audio formats. Built for accessibility and productivity use cases.</div>
+                <div className="back-links">
+                  <a href="https://github.com/sanjaysurya10" target="_blank" rel="noopener" className="btn-git">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.373-12-12-12z" />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>{/* /flip-grid */}
 
         {/* ALL PROJECTS LABEL */}

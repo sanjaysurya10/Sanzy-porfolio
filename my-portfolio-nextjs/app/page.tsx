@@ -93,8 +93,8 @@ export default function HomePage(): JSX.Element {
             <div className="col-xxl-8">
               <div className="text-center my-5">
                 <h2 className="display-5 fw-bolder"><span className="text-gradient d-inline">About Me</span></h2>
-                <p className="lead fw-light mb-4">My name is Sanjay Surya K, and I am a Computer Science graduate with a strong passion for building intelligent and scalable solutions.</p>
-                <p className="text"><strong>I completed my Bachelor&apos;s degree in Computer Science from Anna University and completed my Master&apos;s in Data Science and Analytics at Maynooth University (2025–2026). I have a keen interest in Artificial Intelligence, backend development, and data-driven applications. I enjoy developing dynamic web applications and applying machine learning techniques to solve real-world problems.</strong></p>
+                <p className="lead fw-light mb-4">My name is Sanjay Surya K. I recently graduated with a Master&apos;s in Data Science and Analytics from Maynooth University (2025–2026) and hold a Bachelor&apos;s in Computer Science and Engineering from Anna University (2020–2024).</p>
+                <p className="text"><strong>I have a strong passion for building intelligent and scalable solutions, with hands-on experience in full-stack development, AI/ML, and backend systems. I am actively seeking internship and full-time opportunities in software engineering, data science, and AI/ML roles.</strong></p>
                 <div className="d-flex justify-content-center fs-2 gap-4">
                   <a className="text-gradient" href="https://x.com/sanjaysurya10" target="_blank" rel="noopener"><i className="bi bi-twitter-x"></i></a>
                   <a className="text-gradient" href="https://linkedin.com/in/sanjay-surya-1609a9293" target="_blank" rel="noopener"><i className="bi bi-linkedin"></i></a>
